@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DisplayProducSc">
+   <children>
+      <TableView fx:id="tableViewDsplay" layoutX="41.0" layoutY="68.0" prefHeight="277.0" prefWidth="537.0">
+         <columns>
+            <TableColumn fx:id="IDCol" prefWidth="125.0" text="ID" />
+            <TableColumn fx:id="NameCol" prefWidth="143.0" text="NAME" />
+            <TableColumn fx:id="PriceCol" prefWidth="141.0" text="PRICE" />
+            <TableColumn fx:id="QuantityCol" prefWidth="126.0" text="QUANTITY" />
+         </columns>
+      </TableView>
+      <Text layoutX="144.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DISPLAY ALL PRODUCTS">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Text>
+      <Button fx:id="BackDisplayProductButton" layoutX="420.0" layoutY="361.0" mnemonicParsing="false" onAction="#BackDisplayProductF" text="Back" />
+   </children>
+</AnchorPane>

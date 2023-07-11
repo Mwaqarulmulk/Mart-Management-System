@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SearchProductSc">
+   <children>
+      <TextField fx:id="searchSearchID" layoutX="170.0" layoutY="119.0" prefHeight="33.0" prefWidth="149.0" promptText="ID" />
+      <Text layoutX="91.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SEARCH PRODUCT">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+      <Button fx:id="searchSearchPButton" layoutX="347.0" layoutY="115.0" mnemonicParsing="false" onAction="#searchSearchPButton" prefHeight="33.0" prefWidth="102.0" text="Search">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="BackSearchProductButton" layoutX="347.0" layoutY="350.0" mnemonicParsing="false" onAction="#BackSearchProductF" text="Back" />
+      <TableView fx:id="UpdateTableSearch" layoutX="60.0" layoutY="184.0" prefHeight="95.0" prefWidth="481.0">
+         <columns>
+            <TableColumn fx:id="TidCl" prefWidth="125.0" text="ID" />
+            <TableColumn fx:id="TnameCl" prefWidth="113.0" text="NAME" />
+            <TableColumn fx:id="TpriceCl" prefWidth="118.0" text="PRICE" />
+            <TableColumn fx:id="TquantityCl" prefWidth="124.0" text="QUANTITY" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
